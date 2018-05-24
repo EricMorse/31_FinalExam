@@ -19,8 +19,8 @@ def main():
     print()
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
-    run_test_problem1a()
-    # run_test_problem1b()
+    # run_test_problem1a()
+    run_test_problem1b()
 
 
 def run_test_problem1a():
@@ -167,9 +167,14 @@ def problem1b(numbers):
       :type numbers:  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    size_of_third = len(numbers)//3
+    total = 0
+    for k in range(size_of_third, 2*size_of_third, 1):
+        total = total + numbers[k]
+    return total
 
 
 ###############################################################################
